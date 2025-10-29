@@ -11,7 +11,9 @@ public class NPCParticles : MonoBehaviour
 
     private void HandleNPCDied()
     {
-        var deathparticle = Instantiate(deathParticlePrefab, transform.position, transform.rotation);
-        Destroy(deathparticle, 4f);
+        deathParticlePrefab.Play();
+
+        //var deathparticle = Instantiate(deathParticlePrefab, transform.position, transform.rotation);
+       // Destroy(deathparticle, 4f);
     }
 }

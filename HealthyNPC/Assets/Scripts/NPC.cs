@@ -6,4 +6,12 @@ public class NPC : MonoBehaviour
     {
         GetComponent<IHealth>().TakeDamage(amount);
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(10);
+        }
+    }
 }
